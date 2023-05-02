@@ -20,18 +20,19 @@ This scraper is under active development. If you have any feature requests you c
 
 ## Input Parameters
 
-The input of this scraper should be JSON containing the list of pages on Google Play that should be visited. Required fields are:
+The input of this scraper should be JSON containing the list of pages on Google Play that should be visited. Possible fields are:
 
-| Field                | Type    | Description                                                                                                                                                                                                    |
-| -------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| startUrls            | Array   | (optional) List of Google Play URLs. You should only provide search, developer page, or  application page URLs.                                                                                                                 |
-| includeReviews       | Boolean | (optional) This will add all the reviews that Google Play provides into the app objects. Please keep in mind that the time and resources the actor uses will increase proportionally by the number of reviews. |
-| endReviewsPage              | Integer | (optional) Final number of reviews page that you want to scrape. Default is `Infinite`. This only limits out the reviews pages.                                                          |
-| proxy                | Object  | Proxy configuration                                                                                                                                                                                            |
+- `startUrls`: (Optional) (Array) List of Google Play URLs. You should only provide search, developer page, or  application page URLs.
+
+- `includeReviews`: (Optional) (Boolean) This will add all the reviews that Google Play provides into the app objects. Please keep in mind that the time and resources the actor uses will increase proportionally by the number of reviews..
+
+- `endReviewsPage`: (Optional) (Number) Final number of reviews page that you want to scrape. Default is `Infinite`. This only limits out the reviews pages.
+
+- `proxy`: (Required) (Proxy Object) Proxy configuration.
 
 This solution requires the use of **Proxy servers**, either your own proxy servers or you can use [Apify Proxy](https://www.apify.com/docs/proxy).
 
-##### Tip
+### Tip
 
 If you want to scrape reviews of an application which contains a lot, using `endReviewsPage` is strongly suggested. Even though the actor has the capability to scrape all of them, the total resource consumption will proportionally increase and might be too much.
 
