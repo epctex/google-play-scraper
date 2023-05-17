@@ -24,7 +24,9 @@ The input of this scraper should be JSON containing the list of pages on Google 
 
 - `startUrls`: (Optional) (Array) List of Google Play URLs. You should only provide search, developer page, or  application page URLs.
 
-- `includeReviews`: (Optional) (Boolean) This will add all the reviews that Google Play provides into the app objects. Please keep in mind that the time and resources the actor uses will increase proportionally by the number of reviews..
+- `includeReviews`: (Optional) (Boolean) This will add all the reviews that Google Play provides into the app objects. Please keep in mind that the time and resources the actor uses will increase proportionally by the number of reviews.
+
+- `onlyIncludeReviews`: (Optional) (Boolean) Including reviews of apps without the app information. This is suggested when there are too many reviews in place.
 
 - `endReviewsPage`: (Optional) (Number) Final number of reviews page that you want to scrape. Default is `Infinite`. This only limits out the reviews pages.
 
