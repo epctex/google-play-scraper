@@ -1,3 +1,5 @@
+[https://apify.com/epctex/google-play-scraper](https://apify.com/epctex/google-play-scraper?fpr=yhdrb)
+
 # Actor - Google Play Scraper
 
 ## Google Play scraper
@@ -14,7 +16,7 @@ The Google Play data scraper supports the following features:
 
 -   Get all apps from any developer - You can check the shelves and scrape the information of the newest updates.
 
-## Bugs, fixes, updates and changelog
+## Bugs, fixes, updates, and changelog
 
 This scraper is under active development. If you have any feature requests you can create an issue from [here](https://github.com/epctex/google-play-scraper/issues).
 
@@ -22,13 +24,13 @@ This scraper is under active development. If you have any feature requests you c
 
 The input of this scraper should be JSON containing the list of pages on Google Play that should be visited. Possible fields are:
 
-- `startUrls`: (Optional) (Array) List of Google Play URLs. You should only provide search, developer page, or  application page URLs.
+- `startUrls`: (Optional) (Array) List of Google Play URLs. You should only provide search, developer page, or application page URLs.
 
-- `includeReviews`: (Optional) (Boolean) This will add all the reviews that Google Play provides into the app objects. Please keep in mind that the time and resources the actor uses will increase proportionally by the number of reviews.
+- `includeReviews`: (Optional) (Boolean) This will add all the reviews that Google Play provides into the app objects. Please keep in mind that the time and resources the actor uses will increase proportionally to the number of reviews.
 
 - `onlyIncludeReviews`: (Optional) (Boolean) Including reviews of apps without the app information. This is suggested when there are too many reviews in place.
 
-- `endReviewsPage`: (Optional) (Number) Final number of reviews page that you want to scrape. Default is `Infinite`. This only limits out the reviews pages.
+- `endReviewsPage`: (Optional) (Number) Final number of reviews page that you want to scrape. The default is `Infinite`. This only limits the review pages.
 
 - `proxy`: (Required) (Proxy Object) Proxy configuration.
 
@@ -36,11 +38,11 @@ This solution requires the use of **Proxy servers**, either your own proxy serve
 
 ### Tip
 
-If you want to scrape reviews of an application which contains a lot, using `endReviewsPage` is strongly suggested. Even though the actor has the capability to scrape all of them, the total resource consumption will proportionally increase and might be too much.
+If you want to scrape reviews of an application that contains a lot, using `endReviewsPage` is strongly suggested. Even though the actor can scrape all of them, the total resource consumption will proportionally increase and might be too much.
 
 ### Compute Unit Consumption
 
-The actor optimized to run blazing fast and scrape as many items as possible. Therefore, it forefronts all the detail requests. If actor doesn't block very often it'll scrape 100 apps in less than a minute with ~0.001-0.003 compute units.
+The actor is optimized to run blazing fast and scrape as many items as possible. Therefore, it forefronts all the detailed requests. If the actor doesn't block very often it'll scrape 100 apps in less than a minute with ~0.001-0.003 compute units.
 
 ### Google Play Scraper Input example
 
@@ -83,4 +85,4 @@ https://api.apify.com/v2/datasets/fQ8QnvDv3BkHQfHlk/items?clean=true&format=json
 ```
 
 ## Contact
-Please visit us through [epctex.com](https://epctex.com) to see all the products that is available for you. If you are looking for any custom integration or so, please reach out to us through the chat box in [epctex.com](https://epctex.com). In need of support? [devops@epctex.com](mailto:devops@epctex.com) is at your service.
+Please visit us through [epctex.com](https://epctex.com) to see all the products that are available for you. If you are looking for any custom integration or so, please reach out to us through the chat box in [epctex.com](https://epctex.com). In need of support? [devops@epctex.com](mailto:devops@epctex.com) is at your service.
